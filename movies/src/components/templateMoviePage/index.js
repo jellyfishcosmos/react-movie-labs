@@ -8,7 +8,7 @@ import { useQuery } from "react-query";
 import Spinner from '../spinner';
 
 const TemplateMoviePage = ({ movie, children }) => {
-  const [images, setImages] = useState([]);
+  const [image, setImages] = useState([]);
 
   const { data , error, isLoading, isError } = useQuery(
     ["images", { id: movie.id }],
